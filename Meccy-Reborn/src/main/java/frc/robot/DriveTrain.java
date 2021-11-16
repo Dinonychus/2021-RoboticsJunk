@@ -28,8 +28,41 @@ drive4 = new Talon(4);
 @Override public void initDefaultCommand() { setDefaultCommand((new Drive()); }
 public void setDrive(double speed){
   drive1.set(ControlMode.PercentOutput, -speed*0.6);
+  drive2.set(ControlMode.PercentOutput, speed*0.6);
+  drive3.set(ControlMode.PercentOutput, -speed*0.6);
+  drive4.set(ControlMode.PercentOutput, speed*0.6);
+
 }
+public void setLeft(double speed){
+  drive2.set(ControlMode.PercentOutput, speed*0.6);
+
+ drive4.set(ControlMode.PercentOutput, speed*0.6);
+
+}
+public void setRight(double speed){
+  drive1.set(ControlMode.PercentOutput, -speed*0.6);
+
+  drive3.set(ControlMode.PercentOutput, -speed*0.6);
+}
+public void setSouthWest(double speed){
+  drive1.set(ControlMode.PercentOutput, -speed*0.6);
+
+}
+public void setNorthWest(double speed){
+  drive3.set(ControlMode.PercentOutput, -speed*0.6);
+ 
+}
+public void setSouthEast(double speed){
+  drive2.set(ControlMode.PercentOutput, speed*0.6);
+
+}
+public void setNorthEast(double speed){
+  drive4.set(ControlMode.PercentOutput, speed*0.6);
+
+}
+public void updateDashboard(){}
+
 }
 
 
-}
+

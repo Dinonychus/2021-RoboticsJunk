@@ -44,19 +44,19 @@ public void setRight(double speed){
 
   drive3.set(ControlMode.PercentOutput, -speed*0.6);
 }
-public void setSouthWest(double speed){
+public void frontRight(double speed){
   drive1.set(ControlMode.PercentOutput, -speed*0.6);
 
 }
-public void setNorthWest(double speed){
+public void backRight(double speed){
   drive3.set(ControlMode.PercentOutput, -speed*0.6);
  
 }
-public void setSouthEast(double speed){
+public void frontLeft(double speed){
   drive2.set(ControlMode.PercentOutput, speed*0.6);
 
 }
-public void setNorthEast(double speed){
+public void backLeft(double speed){
   drive4.set(ControlMode.PercentOutput, speed*0.6);
 
 }
